@@ -34,3 +34,28 @@
 
 }
 
+@media screen and (min-width: 1024px) {
+    .titulo__banner{
+        font-size: 36px;
+    }
+
+    .pesquisa__banner{
+        width:50%
+    }
+    .pesquisa__banner::placeholder{
+        background-position: 5rem;
+    }
+}
+
+@media screen and (min-width: 1457px){
+    .pesquisa__banner{
+        width:35%;
+    }
+    .pesquisa__banner::placeholder{
+        background-position:6rem ;
+    }
+    .banner{
+        padding: 6rem 0;
+    }
+}
+

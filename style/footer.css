@@ -1,54 +1,132 @@
-.cadastro{
+.cadastro {
     background-color: var(--branco);
-    padding:1.5rem;
+    padding: 1.5rem;
     font-family: var(--font-principal);
 
 }
 
-.titulo__cadastro, .descriçao__cadastro, .email{
-    background:var(--azul-degrade);
+.titulo__cadastro,
+.descriçao__cadastro,
+.email {
+    background: var(--azul-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.titulo__cadastro{
+
+.titulo__cadastro {
     font-weight: 500;
-    font-size:18px;
+    font-size: 18px;
 }
 
-.descriçao__cadastro{
+.descriçao__cadastro {
     font-weight: 300;
-    font-size:16px;
+    font-size: 16px;
     padding: 1rem 0;
 }
 
-.email{
+.email {
     border: 1px solid black;
     border-radius: 28px;
     padding: 0.5rem;
     font-size: 16px;
-    width:90%;
+    width: 90%;
     color: var(--azul);
 
 
 }
 
-.email::placeholder{
+.email::placeholder {
     background: url(../img/Email.svg) no-repeat;
     padding-left: 2.5rem;
     background-position: 0.5rem;
 }
 
-.grupo__alura{
+.grupo__alura {
     font-weight: 400;
     font-size: 16px;
     padding: 1.5rem;
     font-family: var(--font-principal);
     background-color: var(--branco);
-    border-top: 1px solid black
+    border-top: 1px solid black;
+
+    
+}
+.lista__rodape{
+    display:none;
 }
 
+@media screen and (min-width: 1024px) {
+    .cadastro {
+        display: flex;
+        padding: 2.5rem 7rem;
 
+    }
 
+    .titulo__cadastro {
+        font-size: 24px;
+    }
 
+    .lista__rodape{
+        display:block;
+    }
 
+    .email {
+        margin: 2rem 3rem;
+
+    }
+
+    .grupo__alura {
+        font-size: 24px;
+        border-top: none;
+    }
+
+    .mundarel {
+        
+        font-weight: 400;
+        font-size: 16px;
+        padding: 1.5rem;
+        font-family: var(--font-principal);
+        background-color: var(--branco);
+        border-top: 1px solid black
+    }
+    .lista__rodape{
+        margin-top:1.5rem;
+        
+    }
+    .titulo__lista{
+        color:var(--cinza);
+        font-size:14px;
+        margin-left: 1.7rem;
+        padding-bottom: 1rem;
+       
+    }
+    .item__lista{
+        display: flex;
+        padding:.5rem;
+        margin: 0 1rem;
+        align-items: center;
+        
+    }
+    .arrumadinha__rodape{
+        display:flex;
+        justify-content: space-around;
+
+    }
+    .link__rodape{
+       text-decoration: none;
+       color:var(--cinza-escuro);
+       margin-left:0.5rem;
+    }
+    
+}
+
+@media screen and (min-width:1457px){
+    .cadastro{
+        padding: 3rem 20vw;
+    }
+    .lista__rodape{
+        border-left: 1px solid var(--cinza);
+       
+    }
+}

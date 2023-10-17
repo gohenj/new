@@ -91,3 +91,72 @@ div[class=swiper-button-next] {
 .img__angular{
     margin-bottom: 2rem;
 }
+
+.estrelinhas{
+    padding-bottom: 1rem;
+}
+.arrumadinha{
+    padding-top:2rem;
+}
+
+@media screen and (min-width: 1024px){
+    .titulo__carrosel{
+        font-size: 26px;
+    }
+
+    .swiper-pagination{
+        margin:2rem 0 3rem 0;
+    }
+    .swiper{
+        width: 60%;   
+    }
+   .angular{
+    width:57%;
+
+   }
+    .card{
+        margin: 2rem auto;
+    }
+    
+
+}
+
+@media screen and (min-width: 1457px){
+      .carrosel__container{
+        display:flex;
+        margin:0 12vw 3rem 12vw;
+        align-items: center;
+      }
+
+      .card{
+        margin-left:3rem;
+        width:70%;
+       
+      }
+      .banana{
+        font-size: 32px;
+        margin-right: 1rem;
+      }
+      .arrumadinha{
+        padding:0;
+      }
+      .swiper{
+        margin-bottom: 2rem;
+        width:100%;
+      }
+      
+      .img__angular{
+        width:25%;
+        margin-left:1rem;
+      }
+     
+
+}  
+
+
+
+
+
+
+
+

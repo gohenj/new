@@ -1,3 +1,12 @@
+.container__botao:checked ~.container__rotulo > .cabeçalho__menu-hamburguer{
+    background-image: url(../img/Menu\ Aberto.svg);
+}
+
+.container__botao:checked ~ .container__rotulo{
+    background:var(--azul-degrade) ;
+}
+
+
 .cabeçalho__menu-hamburguer{
     width:24px;
     height:24px;
@@ -56,7 +65,109 @@
     font-size: 16px;
 }
 
-.container__botao {
+
+
+.container__botao, .titulo__container, .lista__atalhos, .paragrafo__atalho {
     display:none;
+}
+
+
+@media screen and (min-width: 1024px){
+
+    .cabeçalho{
+        padding:0 4rem;
+    }
+
+    .titulo__container, .titulo__negrinho{
+        font-family: var(--font-secundaria);
+        font-size: 30px;
+    }
+
+    .titulo__container{
+        font-weight: 400;
+        display:block;
+    }
+
+    .titulo__negrinho{
+        font-weight: 700;
+    }
+
+    .lista__atalhos{
+        display:flex;
+    }
+
+    .atalhos{
+        padding: 1.7rem 1rem 0 1rem;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: var(--font-principal);
+        
+        
+    }
+    .link__atalhos{
+        text-decoration: none;
+        color: black;
+    }
+
+    .logo{
+        margin: 0 1rem;
+    }
+
+
+    .transparente{
+        display:none;
+    }
+
+    .cabeçalho__menu-hamburguer{
+        display: none;
+    }
+
+    .checkbox:checked~.lista__menu{
+        display:block;
+        width:auto;
+
+    }
+    .checkbox{
+        display: none;
+    }
+    .checkbox:checked ~ .opçoes__rotulo > .atalhos{
+        background: var(--azul-degrade);
+        color: var(--branco);
+        padding: 1.7rem 1rem;;
+    }
+    .lista-menu__itens:hover{
+        
+        background: var(--azul-degrade);
+    }
+    .lista-menu__itens:hover > .itens__lista{
+        -webkit-text-fill-color: var(--branco);
+    }
+
+    
+
+}
+
+@media screen and (min-width: 1457px){
+    .container__link{
+        display:flex;
+        align-items: center;
+        text-decoration:none;
+        color: black;
+        font-family: var(--font-principal);
+        
+    }
+    .cabeçalho{
+        padding: 0 2rem;
+    }
+    .lista__atalhos{
+        margin-right:auto;
+    }
+    .titulo__container{
+        padding-right: 2rem;
+    }
+    .paragrafo__atalho{
+        display:block;
+    }
 }
 

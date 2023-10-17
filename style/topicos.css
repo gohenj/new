@@ -3,6 +3,7 @@
     text-align:center;
     padding-bottom: 1rem;
 
+
 }
 
 .titulo__topicos{
@@ -35,6 +36,31 @@
 
 }
 
-.arrumadinha{
-    padding-top:2rem;
+
+
+@media screen and (min-width: 1024px){
+     .titulo__topicos{
+        font-size: 24px;
+        padding:3rem 0 4rem 0;
+
+     }
+     .items__topicos{
+        font-size: 24px;
+        padding:1.5rem;
+        margin-bottom: 5rem;
+ 
+     }
+     .lista__topicos{
+        margin-bottom: 3.5rem;
+     }
+
+     .topicos{
+        padding: 0 3rem;
+     }
+}
+
+@media screen and (min-width: 1456px){
+   .topicos{
+      padding: 1rem 20vw;
+   }
 }
